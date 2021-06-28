@@ -41,10 +41,11 @@ main{
 .rule{
 	margin-bottom: 10px;
 	text-align: left;
-	color: rgba(255, 0, 50, 1);
+	color: #000;
 	 font-size: 1.3rem;
   cursor: default;
-  font-weight: 650;
+  font-weight: 750;
+	font-family: sans-serif;
   transition: all 0.2s;
 	background-color: rgba(255, 255, 255, 0.5);
 	  padding: 0.4rem 2rem;
