@@ -20,7 +20,7 @@ main{
 .cont{
 	position: relative;
 	background: white;
-	min-height: 80vh;
+	min-height: 85vh;
 	width: 70%;
 	background: linear-gradient(to right bottom, rgba(255,255,255,0.6),rgba(255,255,255,0.4));
 	border-radius: 1rem;
@@ -33,7 +33,7 @@ main{
 }
 
 .player,.reset{
-	transition: all 2s;
+	transition: all 0.75s;
 	min-height: 75vh;
 	border-radius: 1.5rem;
 }
@@ -41,15 +41,17 @@ main{
 	background: linear-gradient(to  bottom, rgba(211,211,211,0.4),rgba(111,111,111, 0.7));
 	flex: 2;
 
+
 }
 .player--1{
 	margin: 40px 25px 40px 0px;
 	background: linear-gradient(to  bottom, rgba(211,211,211,0.4),rgba(111,111,111, 0.7));
 	flex: 2;
+
 }
 .reset{
 	margin: 40px 15px 40px 15px;
-	background: linear-gradient(to right bottom, rgba(214,205,205,0.6),rgba(255,255,255, 0.4));
+	background: none;
 	flex: 1.5;
 }
 .name {
@@ -63,7 +65,7 @@ main{
 }
 
 .score {
-	margin-top: 20px;
+	margin-top: 25px;
 	text-align: center;
   font-size: 3.5rem;
   font-weight: 300;
@@ -72,25 +74,25 @@ main{
 }
 .current {
 	margin: auto;
-	margin-top: 55px;
+	margin-top: 70px;
   background-color:  rgba(255, 0, 50, 1);
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
-  width: 65%;
-  padding: 1rem;
+  width: 60%;
+  padding: 0.8rem;
   text-align: center;
-  transition: all 0.75s;
+  transition: all 1.75s;
 }
 
 .current-label {
-  margin-bottom: 1rem;
-  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
   color: #ddd;
 }
 
 .current-score {
-  font-size: 3.5rem;
+  font-size: 2.3rem;
 }
 .btn{
 	position: absolute;
@@ -109,24 +111,49 @@ main{
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
 
 }
+
+.btn:hover{
+	text-shadow: 0px 1px #000;
+}
+
 .btn--new {
-  top: 3.5em;
-  right: 13.6em;
+  	padding: 0.7rem 3.3rem;
+  top: 1em;
+  right: 11.2em;
 }
 .btn--roll {
   right: 15em;
-  top: 16em;
+  top: 17em;
 }
 .btn--hold {
 	right: 16.4em;
-  top: 19.6em;
+  top: 21em;
 }
 .btn:active {
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
+.win{
+	margin: 7px 0px;
+	position: absolute;
+  color: #444;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px dashed red;
+  	border-radius: 20rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  	right: 21.8em;
+  	top: 5.5em;
+  	text-align: center;
+  	padding: 13px 4px;
+}
+.win:focus{
+
+	outline: none;
+}
 .player--winner  {
-  background: #39D956;
+  background:  rgba(255, 240,250, 1.0);
 }
 
 .player--winner .name {
@@ -135,7 +162,7 @@ main{
 }
 .dice {
 	position: absolute;
-	top: 33%;
+	top: 35%;
 	left: 44%;
 	width: 6em;
 	height: 6em;
@@ -154,5 +181,7 @@ main{
 }
 
 .player--active .current {
+  transition: all 2.75s;
+
   opacity: 1;
 }

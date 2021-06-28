@@ -2,38 +2,26 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Dice Game</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<main>
-	<div class="cont">
-	 <section class="player player--0 player--active">
-        <h2 class="name" id="name--0">Player 1</h2>
-        <p class="score" id="score--0">0</p>
-        <div class="current">
-          <p class="current-label">Current</p>
-          <p class="current-score" id="current--0">0</p>
-        </div>
-      </section>
-		<img src="Images/roll.gif" class="dice">
-		<div class="reset">
-		<button class="btn btn--new"><span>🔄</span> New game</button>
-      <button class="btn btn--roll"> <span>🎲</span> Roll dice</button>
-      <button class="btn btn--hold"> <span>📥</span> Hold</button>
-		</div>
-		 <section class="player player--1">
-        <h2 class="name" id="name--1">Player 2</h2>
-        <p class="score" id="score--1">0</p>
-        <div class="current">
-          <p class="current-label">Current</p>
-          <p class="current-score" id="current--1">0</p>
-        </div>
-      </section>
 
-	</div>	
+		<div class="header">
+		<h1>  Dice Game &nbsp</h1>
+		<img src="Images/roll.gif">
+
+	</div>
+	<main>
+		<div class="cont">
+		<p class="rule">1. The game has 2 players, playing turnwise.</p>
+		<p class="rule">2. Initially the winning score is 100 but players can change upto their choice.</p>
+	 <p class="rule">3. In a round player can roll as many times as he wants and scores get added to current score each time.</p>
+	 <p class="rule">4. But if he rolls a 1, all his round score come to zero and it's next player's turn.</p>
+	 <p class="rule">5. Player can choose to hold the current round score and it gets added to Global score, and then its turn for next player.</p>
+</div>
+	<a href="game.html" > <button class="btn">Continue </button></a>
 	</main>
 </body>
 </html>
