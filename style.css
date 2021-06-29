@@ -34,7 +34,7 @@ main{
 
 .player,.reset{
 	transition: all 0.75s;
-	min-height: 75vh;
+	min-height: 70vh;
 	border-radius: 1.5rem;
 }
 .player--0{margin: 40px 0px 40px 25px;
@@ -273,7 +273,7 @@ main{
   font-size: 1.5rem;
 }
 .player,.reset{
-	min-height: 65vh;
+	min-height: 55vh;
 }
 
 .score {
@@ -311,7 +311,7 @@ main{
   font-size: 1.3rem;
 }
 .player,.reset{
-	min-height: 55vh;
+	min-height: 45vh;
 }
 
 	.btn{
@@ -352,7 +352,7 @@ main{
   font-size: 1.1rem;
 }
 .player,.reset{
-	min-height: 50vh;
+	min-height: 40vh;
 }
 
 	.btn{
@@ -399,7 +399,7 @@ main{
 	}
 .player,.reset{
 	width: 6em;
-	min-height: 35vh;
+	min-height: 30vh;
 }
 
 	.btn{
