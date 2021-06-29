@@ -18,9 +18,9 @@ main{
 	
 }
 .cont{
-	position: relative;
+	position: absolute;
 	background: white;
-	min-height: 85vh;
+	min-height: 80vh;
 	width: 70%;
 	background: linear-gradient(to right bottom, rgba(255,255,255,0.6),rgba(255,255,255,0.4));
 	border-radius: 1rem;
@@ -50,6 +50,8 @@ main{
 
 }
 .reset{
+	position: relative;
+
 	margin: 40px 15px 40px 15px;
 	background: none;
 	flex: 1.5;
@@ -94,14 +96,19 @@ main{
 .current-score {
   font-size: 2.3rem;
 }
+.all{
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
 .btn{
 	position: absolute;
-	 transform: translateX(-50%);
-  color: #444;
+	color: #444;
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
   font-weight: 650;
   transition: all 0.2s;
@@ -117,25 +124,20 @@ main{
 }
 
 .btn--new {
-  	padding: 0.7rem 3.3rem;
-  top: 1em;
-  right: 11.2em;
+  	padding: 0.7rem 2.5rem;
+  top: 0.3em;
 }
 .btn--roll {
-  right: 15em;
-  top: 17em;
+  top: 16em;
 }
 .btn--hold {
-	right: 16.4em;
-  top: 21em;
+  top: 20em;
 }
 .btn:active {
-  transform: translate(-50%, 3px);
+  transform: translate(0, 4px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 .win{
-	margin: 7px 0px;
-	position: absolute;
   color: #444;
   background: rgba(255, 255, 255, 0.6);
   border: 1px dashed red;
@@ -143,10 +145,10 @@ main{
   font-family: inherit;
   font-size: 1rem;
   font-weight: 900;
-  	right: 21.8em;
-  	top: 5.5em;
+  	top: 4.5em;
+  	position:  relative;
   	text-align: center;
-  	padding: 13px 4px;
+  	padding: 12px 3px;
 }
 .win:focus{
 
@@ -162,7 +164,7 @@ main{
 }
 .dice {
 	position: absolute;
-	top: 35%;
+	top: 36%;
 	left: 44%;
 	width: 6em;
 	height: 6em;
@@ -184,4 +186,239 @@ main{
   transition: all 2.75s;
 
   opacity: 1;
+}
+
+
+@media screen and (max-width : 1070px)
+{
+	.cont{
+	width: 76%;
+	}
+	.name{
+		font-size: 2.2rem;
+	}
+	.current-label {
+  font-size: 1.3rem;
+}
+
+.current-score {
+  font-size: 2rem;
+}
+
+.score {
+	margin-top: 35px;
+	}
+	.btn{
+		padding: 0.6rem 1.5rem;
+	}
+	.win{
+  	padding: 11px 2px;
+	}
+}
+
+@media screen and (max-width : 900px)
+{	
+	
+	.cont{
+	min-height: 70vh;
+
+	width: 80%;
+	}
+	.name{
+		font-size: 1.8rem;
+	}
+	.current-label {
+  font-size: 1rem;
+}
+
+.current-score {
+  font-size: 1.8rem;
+}
+
+.player,.reset{
+	min-height: 60vh;
+}
+
+.score {
+	margin-top: 50px;
+	}
+	.btn{
+		padding: 0.5rem 1.2rem;
+	}
+	.win{
+  	padding: 10px 1px;
+  font-size: 0.9rem;
+
+	}	
+.dice{
+	top: 34%;
+	left: 42%;
+}
+}
+
+@media screen and (max-width : 700px)
+{	
+	
+	.cont{
+	width: 85%;
+	}
+	.name{
+		font-size: 1.5rem;
+	}
+	.current-label {
+  font-size: 0.8rem;
+}
+
+.current-score {
+  font-size: 1.5rem;
+}
+.player,.reset{
+	min-height: 65vh;
+}
+
+.score {
+	margin-top: 60px;
+	}
+	.btn{
+		padding: 0.4rem 0.7rem;
+		font-size: 0.9rem;
+	}
+	.win{
+  	padding: 8px 1px;
+  font-size: 0.7rem;
+
+	}	
+.dice{
+	top: 32%;
+}
+	}
+
+@media screen and (max-width : 570px)
+{
+.cont{
+	min-height: 60vh;
+	width: 90%;
+}
+
+	.name{
+		font-size: 1.3rem;
+	}
+	.current-label {
+  font-size: 0.7rem;
+}
+
+.current-score {
+  font-size: 1.3rem;
+}
+.player,.reset{
+	min-height: 55vh;
+}
+
+	.btn{
+		padding: 0.4rem 0.7rem;
+		font-size: 0.8rem;
+	}
+	.win{
+  	padding: 8px 1px;
+  font-size: 0.6rem;
+
+	}	
+.dice{
+	left: 44%;
+		width: 4em;
+	height: 4em;
+}
+
+
+}
+
+@media screen and (max-width : 470px)
+{
+.cont{
+	min-height: 55vh;
+	width: 95%;
+}
+
+	.name{
+		font-size: 1.1rem;
+	}
+	.current-label {
+  font-size: 0.5rem;
+}
+.current{	margin: 1.5rem ;
+	margin-top: 2.5rem;
+}
+.current-score {
+  font-size: 1.1rem;
+}
+.player,.reset{
+	min-height: 50vh;
+}
+
+	.btn{
+		padding: 0.3rem 0.5rem;
+		font-size: 0.7rem;
+	}
+	.win{
+  	padding: 6px 1px;
+  font-size: 0.5rem;
+
+	}	
+.dice{
+	left: 44%;
+		width: 3.5em;
+	height: 3.5em;
+}
+
+}
+
+
+@media screen and (max-width : 370px)
+{
+
+.cont{
+	min-height: 50vh;
+	width: 97%;
+}
+
+
+	.name{
+		font-size: 0.9rem;
+	}
+	.current-label {
+  font-size: 0.4rem;
+}
+.current{	margin: 1.5rem ;
+}
+.current-score {
+  font-size: o.9rem;
+}
+
+.score {
+	margin-top: 40px;
+	}
+.player,.reset{
+	width: 6em;
+	min-height: 35vh;
+}
+
+	.btn{
+		padding: 0.3rem 0.3rem;
+		font-size: 0.6rem;
+	}
+	.win{
+  	padding: 6px 1px;
+  font-size: 0.4rem;
+  	top: 4.9em;
+
+
+	}	
+.dice{
+	top: 38%;
+
+	left: 42%;
+		width: 3.5em;
+	height: 3.5em;
+}
+
 }

@@ -77,3 +77,49 @@ main{
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
+
+@media screen and (max-width: 750px)
+{
+	.rule{
+		
+		font-size: 1rem;
+
+	}
+}
+
+@media screen and (max-width: 480px)
+{
+
+.header{
+	font-size: 1.2em;
+	padding: 15px;
+	padding-top: 25px;
+	}
+	img{
+		width: 3em;
+	}
+
+.cont{
+	min-height: 60vh;
+	width: 70%;
+}
+.rule{
+	margin-bottom: 10px;
+	 font-size: 0.8rem;
+  font-weight: 600;
+	padding: 0.4rem 0.9rem;
+}
+
+}
+
+@media screen and (max-width: 400px)
+{
+.rule{
+	margin-bottom: 10px;
+	 font-size: 0.7rem;
+	}
+	.btn{
+		padding: 0.6rem 1rem;
+		font-size: 1rem;
+	}
+}
